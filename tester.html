@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tester project for RegexJS</title>
+</head>
+
+<body>
+  <span>Email</span>
+  <br><input type="email" id="email"><br>
+  <button type="button" id="button">Validate</button>
+  <script>
+    const button = document.querySelector('#button')
+    button.addEventListener('click', () => {
+      let email = document.querySelector('#email').value;
+      console.log(email)
+      RegexJS.validateEmail(email);
+    })
+  </script>
+  <!-- RegexJS::: -->
+  <script src="/regex.min.js"></script>
+</body>
+
+</html>
